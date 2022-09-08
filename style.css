@@ -13,3 +13,55 @@ section {
 }
 
 /* Creating Banner Area in Css */
+.banner {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+}
+
+/* Image styling */
+.headshot {
+  width: 250px;
+  height: 350px;
+  margin-right: 500px;
+  border-right: 5px solid #009e66;
+  border-bottom: 5px solid #009e66;
+  border-radius: 5px;
+}
+
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+
+.banner h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.5em;
+}
+
+.banner h2 span {
+  font-size: 1.2em;
+  color: #efefef;
+}
+
+.banner h3 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.btn {
+  position: relative;
+  background: #009e66;
+  color: #000;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}

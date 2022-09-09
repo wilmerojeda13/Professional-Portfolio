@@ -19,49 +19,122 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #111;
+  background-color: #fff;
 }
 
-/* Image styling */
+.banner {
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  animation: 15s ease infinite;
+}
+
+/* Image styling 
 .headshot {
   width: 250px;
   height: 350px;
   margin-right: 500px;
-  border-right: 5px solid #009e66;
-  border-bottom: 5px solid #009e66;
+  border-right: 5px solid #ffd8a9;
+  border-bottom: 5px solid #ffd8a9;
   border-radius: 5px;
 }
+*/
+
+/* Hero Section 
 
 .headshot-container {
   display: flex;
   align-items: center;
 }
+*/
 
+/* Header Section */
 .banner h2 {
   font-size: 2.5rem;
   font-weight: 300;
-  color: #444;
+  color: #ffd8a9;
   line-height: 1.5em;
 }
 
 .banner h2 span {
   font-size: 1.2em;
-  color: #efefef;
+  color: #fdeedc;
 }
 
 .banner h3 {
-  color: #fff;
+  color: #fdeedc;
   font-size: 1.5em;
   font-weight: 500;
 }
 
 .btn {
   position: relative;
-  background: #009e66;
-  color: #000;
+  background: #ffd8a9;
+  color: #111;
   display: inline-block;
   margin-top: 20px;
   padding: 10px 30px;
   text-decoration: none;
+  text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+}
+/* About Me Layout */
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.heading p {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.heading h2 {
+  font: size 3em;
+  color: #f1a661;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentBx {
+  padding-left: 40px;
+  text-align: justify;
+}
+
+.proPic {
+  width: 300px;
+  height: 350px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.contentBx h2 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.heading.bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.btn.round {
+  border-radius: 50px;
+}
+
+.bt {
+  margin-top: 20px;
+}
+.w50 {
+  min-width: 25%;
+}
+
+img {
+  max-width: 100%;
 }

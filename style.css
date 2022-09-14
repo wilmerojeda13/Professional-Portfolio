@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Adding All My Section Tag Fixed Padding */
 section {
@@ -47,6 +50,7 @@ section {
 */
 
 /* Header Section */
+
 .banner h2 {
   font-size: 2.5rem;
   font-weight: 300;
@@ -65,7 +69,54 @@ section {
   font-weight: 500;
 }
 
-.btn {
+/* mouse scroll animation */
+.mouse-scroll {
+  width: 30px;
+  height: 50px;
+  border: solid 2px #ebff0d;
+  border-radius: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.mouse-scroll::before,
+.mouse-scroll::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ebff0d;
+  border-top: transparent;
+  border-left: transparent;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -100%) rotate(45deg);
+  animation: scroll 1s ease-in-out infinite;
+}
+.mouse-scroll::after {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
+
+/* CV button styling */
+.btn-1 {
   position: relative;
   background: #ffd8a9;
   color: #111;
@@ -76,8 +127,27 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
 }
+
+/* About me button styling */
+.btn {
+  position: relative;
+  background: #ffd8a9;
+  color: #111;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* About Me Layout */
 
 .heading {
@@ -85,21 +155,26 @@ section {
   text-align: center;
   margin-bottom: 30px;
   color: #111;
+  position: relative;
 }
 
+.textBx {
+  position: absolute;
+}
 .heading p {
   font-style: italic;
   font-size: 14px;
 }
 
 .heading h2 {
-  font: size 3em;
+  font-size: 3rem;
   color: #f1a661;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 
 .contentBx {
@@ -124,8 +199,36 @@ section {
   flex-direction: row;
   align-items: center;
 }
+
+.heading p {
+  font-size: 20px;
+}
 .btn.round {
   border-radius: 50px;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #8942a8;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover::after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
 .bt {
@@ -135,6 +238,64 @@ section {
   min-width: 25%;
 }
 
+p {
+  line-height: 40px;
+}
+
 img {
   max-width: 100%;
+}
+
+/* Creatring Logo, header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+header .logo {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header ul {
+  position: relative;
+
+  display: flex;
+}
+
+header ul li {
+  list-style-type: none;
+  position: relative;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Creating a sticky Header Menu Navbar incss */
+header.sticky {
+  background: white;
+  padding: 20px 100px;
+  box-shadow: 10 10px 10px rgb(0, 0, 0, 0.1);
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: #111;
 }

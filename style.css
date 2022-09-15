@@ -299,3 +299,24 @@ header.sticky .logo,
 header.sticky ul li a {
   color: #111;
 }
+
+/* Styling icon  */
+.icon-css {
+  height: 50px;
+}
+
+.icon-figma {
+  height: 42px;
+}
+
+.icon-freelance {
+  height: 45px;
+}
+
+.icon-group {
+  height: 50px;
+}
+
+.icon-react {
+  height: 50px;
+}

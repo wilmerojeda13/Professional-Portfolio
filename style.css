@@ -320,3 +320,139 @@ header.sticky ul li a {
 .icon-react {
   height: 50px;
 }
+
+.java-react {
+  height: 50px;
+}
+
+.boxSocial {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.boxSocial .icon:hover {
+  transform: scale(1.008);
+  transition: 0.2s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -mz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.boxSocial .icon .linkedin-icon {
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.boxSocial .icon .instagram-icon {
+  margin-left: 10px;
+}
+
+.linkedin-icon {
+  height: 26px;
+}
+
+.facebook-icon {
+  height: 28px;
+}
+
+.instagram-icon {
+  height: 30px;
+}
+
+/* Designing Servieces Layout in Css */
+
+.experiences {
+  background-color: #ffd8a9;
+}
+
+.heading.white p {
+  color: #111;
+}
+
+.experiences .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.experiences .content .experiencesBx {
+  color: #111;
+  background-color: #fad19f;
+  margin: 10px 15px;
+  padding: 30px 15px;
+  text-align: center;
+  max-width: 355px;
+}
+
+.experiences .content .experiencesBx:hover {
+  border-bottom: 2px solid #8942a8;
+  cursor: pointer;
+}
+
+/* Projects img styling */
+.whine-dine {
+  width: 315px;
+  height: 200px;
+}
+
+.travelers-wishlist {
+  width: 315px;
+  height: 200px;
+}
+
+.fit-plan {
+  width: 315px;
+  height: 200px;
+}
+
+.note-taker {
+  width: 315px;
+  height: 200px;
+}
+
+/* Designing Work Layout css */
+
+.work {
+  background-color: #ffd8a9;
+}
+
+.work .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.work .content .workBx {
+  width: 500px;
+  padding: 20px;
+}
+
+.work .content .workBx img {
+  max-width: 100%;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.work .content .workBx img:hover {
+  box-shadow: 0 0 20px 5px #ccc;
+  transform: scale(1.008);
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -mz-transform: scale(1.1);
+  -o-transform: scale(1);
+}
+
+.work .content .workBx p {
+  text-align: justify;
+}
+
+.work .content .workBx a:link,
+.work .content .workBx a:visited,
+.work .content .workBx a:active {
+  color: #161616;
+  text-decoration: none;
+  font-weight: 600;
+}

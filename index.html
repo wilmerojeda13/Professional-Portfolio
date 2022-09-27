@@ -14,11 +14,13 @@
       <a href="" class="logo">Portfolio</a>
       <div class="toggle" onclick="toggleMenu();"></div>
       <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li>
+          <a href="#experiences" onclick="toggleMenu();">Experiences</a>
+        </li>
+        <li><a href="#work" onclick="toggleMenu();">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
       </ul>
     </header>
     <section class="banner" id="home">
@@ -27,9 +29,9 @@
         <h3>I'm a Front end Web Developer</h3>
         <a href="#about" class="btn"><span>About Me</span></a>
       </div>
-      <a href="#about">
+      <!-- <a href="#about">
         <div class="mouse-scroll"></div>
-      </a>
+      </a> -->
       <!-- <div class="headshot-container">
         <img class="headshot" src="./assets/images/Mypic.jpg" alt="my-photo" />
       </div> -->
@@ -93,32 +95,52 @@
         <div class="experiencesBx">
           <img src="./assets/images/css3 (1).png" class="icon-css" />
           <h3>Web Design Css</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>
+            Creator of beautiful layouts and websites using figma in which from
+            scratch a prototype is made to have an idea how the design is going
+            to look when it's ready to launch.
+          </p>
         </div>
         <div class="experiencesBx">
           <img src="./assets/images/groups.png" class="icon-group" />
           <h3>Group Projects</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>
+            The group projects has been a key for success, and it has helped me
+            in terms of gaining knowledge and experiences in the field.
+          </p>
         </div>
         <div class="experiencesBx">
           <img src="./assets/images/computer.png" class="icon-freelance" />
           <h3>FreeLance Projects</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>
+            Worked in numerous of projects at school, on the other hand in my
+            freetime I work as a freelancer.
+          </p>
         </div>
         <div class="experiencesBx">
           <img src="./assets/images/figma.png" class="icon-figma" />
           <h3>UX/UI Designer</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>
+            Designs are build with Visual hierarchy, also typography that is one
+            of the key elements to make whole design have a nice looking UX/UI
+          </p>
         </div>
         <div class="experiencesBx">
           <img src="./assets/images/react.png" class="icon-react" />
           <h3>React</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>
+            React is one of the main and useful frameworks used in which gives
+            you the advantage to optimize you work the best way possible with
+            its modules and components.
+          </p>
         </div>
         <div class="experiencesBx">
           <img src="./assets/images/javascript.png" class="java-react" />
           <h3>JavaScript</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>
+            JavaScript is the main language that is used which is everything you
+            need to make a website responsive
+          </p>
         </div>
       </div>
     </section>
@@ -130,7 +152,7 @@
       </div>
       <div class="content">
         <div class="workBx">
-          <a href="" target="_blank">
+          <a href="https://fraancellaa.github.io/whine-dine/" target="_blank">
             <img
               class="whine-dine"
               src="./assets/images/Whine-Dine.png"
@@ -143,7 +165,7 @@
           </a>
         </div>
         <div class="workBx">
-          <a href="" target="_blank">
+          <a href="https://fierce-cove-76693.herokuapp.com" target="_blank">
             <img
               class="travelers-wishlist"
               src="./assets/images/travelers-Wishlist.png"
@@ -156,7 +178,10 @@
           </a>
         </div>
         <div class="workBx">
-          <a href="" target="_blank">
+          <a
+            href="https://mysterious-scrubland-29825.herokuapp.com/"
+            target="_blank"
+          >
             <img class="fit-plan" src="./assets/images/Fit-Plan.png" alt="" />
             <p>
               Fit-Plan App built as a fitness routine that<br />
@@ -166,7 +191,7 @@
           </a>
         </div>
         <div class="workBx">
-          <a href="" target="_blank">
+          <a href="https://note-app-taker1.herokuapp.com/notes" target="_blank">
             <img
               class="note-taker"
               src="./assets/images/Note-taker-app.png"

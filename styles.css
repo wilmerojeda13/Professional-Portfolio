@@ -237,7 +237,10 @@ section {
 }
 
 .bt {
-  margin-top: 20px;
+  margin-top: 25px;
+}
+.bt-12 {
+  margin-top: 22px;
 }
 .w50 {
   min-width: 25%;

@@ -36,7 +36,7 @@ You can test the project by cloning the repository , and the next step your goin
 
 ## Screenshot:
 
-![alt text](./assets/images/My-Portfolio.png)
+![alt text](./assets/images/Screenshot.png)
 
 #### Website [link](https://wilmerojeda13.github.io/Professional-Portfolio/)
 

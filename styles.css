@@ -53,7 +53,7 @@ section {
 /* Header Section */
 
 .banner h2 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: 300;
   color: #696969;
   line-height: 1.5em;
@@ -74,7 +74,7 @@ section {
 }
 
 /* mouse scroll animation */
-.mouse-scroll {
+/* .mouse-scroll {
   width: 30px;
   height: 50px;
   border: solid 2px #ebff0d;
@@ -117,7 +117,7 @@ section {
     opacity: 0;
     top: 90%;
   }
-}
+} */
 
 /* CV button styling */
 .btn-1 {
@@ -639,13 +639,34 @@ footer.copyright {
   header,
   header.sticky {
     padding: 20px 50px;
+    z-index: 2;
+    background: #7371fc;
   }
+  
   header .menu {
     display: none;
   }
   header .menu {
     position: fixed;
-    background: white;
+    background: #7371fc;
+    display: block;
+    top: 75px;
+    left: -100%;
+    padding: 100px 50px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    border-top: 1px solid rgba(103, 103, 103, 0.3);
+    transition: 0.5s;
+    -webkit-transition:0.5s;
+        -moz-transition:0.5s;
+        -ms-transition:0.5s;
+        -o-transition:0.5s;
+  }
+
+  header .menu.active {
+    position: fixed;
+    background: #7371fc;
     display: block;
     top: 75px;
     left: 0;
@@ -661,6 +682,8 @@ footer.copyright {
     font-weight: 400;
     margin: 10px 0;
   }
+  /* hover effects animation */
+  
   .toggle {
     width: 40px;
     height: 40px;
@@ -676,11 +699,108 @@ footer.copyright {
     background-image: url(./assets/images/close.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 25px;
     cursor: pointers;
   }
   header.sticky .toggle {
     filter: invert(1);
     -webkit-filter: invert(1);
   }
+  section {
+    padding: 100px 30px;
+  }
+  .banner h2 {
+    font-size: 1.5em;
+  }
+  .banner h3 {
+    font-size: 1em;
+  }
+
+  .textBx{
+    position: relative;
+    
+  }
+  .banner{
+    padding:150px 50px 100px
+  }
+
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    --webkit-border-radius:50px
+    --moz-border-radius:50px
+    --ms-border-radius:50px
+    --o-border-radius:50px
+  }
+
+  .content {
+    flex-direction: column;
+  }
+  .contentBx{
+    padding: 0;
+  }
+  .content .w50 img {
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+  .contentBx h2{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .experiences .content .experiencesBx{
+     margin: 10px;
+  }
+  .contactInfoBox {
+    margin: 10px 0;
+  }
+  .contentBx h3{
+    font-size: 20px;
+  }
+  .heading h2 {
+    font-size: 24px;
+  }
 }
+
+@media (max-width:768px) {
+  .heading.bottom{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:row;
+    
+}
+
+
+
+
+.experiences .content .experiencesBx {
+  max-width: calc(100% - 20px);
+  padding: 40px 20px;
+  margin: 30px;
+}
+}
+
+@media (max-width:600px) {
+  .experiences .content .experiencesBx {
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 30px;
+  }
+  .heading.bottom{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:column;
+}
+
+.formBx form {
+  margin-top: 30px;
+}
+
+
+}
+
+
+
